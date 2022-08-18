@@ -13,7 +13,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    
+    var numRef: Int = 0;
+    @IBOutlet weak var number: UILabel!
+    @IBAction func plus(_ sender: Any) {
+        numRef += 1;
+        number.text = "\(numRef)"
+    }
+    @IBAction func minus(_ sender: Any) {
+        numRef -= 1;
+        number.text = "\(numRef)"
+    }
 }
 
